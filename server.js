@@ -20,7 +20,7 @@ function init() {
   ]).then(async (data) => {
       switch(data.action) {
         case 'view all departments':
-          await employeesInstance.get_all_employees(init);
+          await employeesInstance.get_all_departments(init);
           break;
         case 'view all roles':
           await employeesInstance.view_all_roles(init);
